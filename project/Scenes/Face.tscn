@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Assets/Game Objects/face.png" type="Texture" id=1]
+[ext_resource path="res://Scenes/Face.gd" type="Script" id=2]
+
+[node name="Face" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="Face" type="Sprite" parent="."]
+scale = Vector2( 2, 2 )
+texture = ExtResource( 1 )
+centered = false
+hframes = 4
+
+[node name="Control" type="Control" parent="."]
+margin_right = 64.0
+margin_bottom = 64.0
+
+[connection signal="gui_input" from="Control" to="." method="_on_Control_gui_input"]

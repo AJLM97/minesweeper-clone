@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Assets/Game Objects/number.png" type="Texture" id=1]
+[ext_resource path="res://Scenes/Counter.gd" type="Script" id=2]
+
+[node name="Counter" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="C" type="Sprite" parent="."]
+scale = Vector2( 2, 2 )
+texture = ExtResource( 1 )
+centered = false
+hframes = 11
+
+[node name="D" type="Sprite" parent="."]
+position = Vector2( 32, 0 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 1 )
+centered = false
+hframes = 11
+
+[node name="U" type="Sprite" parent="."]
+position = Vector2( 64, 0 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 1 )
+centered = false
+hframes = 11
+frame = 1
